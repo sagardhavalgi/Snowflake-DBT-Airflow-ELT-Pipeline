@@ -56,6 +56,14 @@ This project implements a production-grade ELT architecture using Snowflake, Apa
 ## Flow
 REST APIs -> Fivetran -> Snowflake Raw Layer -> CDC (Streams + Stored Procedures) -> Snowflake Curated Layer -> Apache Airflow -> DBT Transformations -> Fact & Dimension Tables -> Power BI / Tableau
 
+## Monitoring & Alerting
+
+- Airflow DAG Monitoring
+- Job Failure Notifications
+- Retry Mechanisms
+- Execution Logs
+- Data Quality Reports
+
 ## Key Features
 Incremental Data Processing
 Change Data Capture (CDC)
@@ -65,3 +73,7 @@ Data Quality Validation
 Dimensional Data Modeling
 Monitoring & Alerting
 Scalable ELT Architecture
+
+## Disclaimer
+
+This repository demonstrates a production-style ELT architecture for educational and portfolio purposes. All business-specific logic, source systems, datasets, table names, and proprietary information have been anonymized or simplified. No confidential or client-owned information is included in this repository.
