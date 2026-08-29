@@ -38,3 +38,30 @@ Delivers curated fact and dimension tables for downstream analytics.
 <p align="center">
   <img src="ETL-Flow.png" width="700">
 </p>
+
+
+## ELT Workflow
+
+This project implements a production-grade ELT architecture using Snowflake, Apache Airflow, DBT, and Fivetran to deliver scalable and analytics-ready datasets.
+
+## Workflow
+- Data Ingestion – Fivetran extracts data from REST APIs and loads it into Snowflake Raw tables.
+- CDC Processing – Snowflake Streams and Stored Procedures capture incremental changes and apply them to Curated tables using MERGE operations.
+- Orchestration – Apache Airflow manages workflow execution, dependencies, monitoring, retries, and notifications.
+- Data Quality Validation – Automated checks validate data completeness, uniqueness, and business rules.
+- Transformation – DBT transforms curated data into staging, intermediate, and mart models.
+- Data Modeling – Fact and Dimension tables are built following dimensional modeling principles.
+- Analytics & Reporting – Business users consume analytics-ready datasets through Power BI and Tableau.
+
+## Flow
+REST APIs -> Fivetran -> Snowflake Raw Layer -> CDC (Streams + Stored Procedures) -> Snowflake Curated Layer -> Apache Airflow -> DBT Transformations -> Fact & Dimension Tables -> Power BI / Tableau
+
+## Key Features
+Incremental Data Processing
+Change Data Capture (CDC)
+Apache Airflow Orchestration
+DBT Transformations & Testing
+Data Quality Validation
+Dimensional Data Modeling
+Monitoring & Alerting
+Scalable ELT Architecture
