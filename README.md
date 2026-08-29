@@ -33,8 +33,8 @@ Delivers curated fact and dimension tables for downstream analytics.
 - Reporting: Power BI, Tableau
 - Version Control: Git, GitHub
 
-## Architecture Diagram
+
 <h2>Architecture Diagram</h2>
 <p align="center">
-  <img src="ELT-Flow.png" width="700">
+  <img src="ETL-Flow.png" width="700">
 </p>
