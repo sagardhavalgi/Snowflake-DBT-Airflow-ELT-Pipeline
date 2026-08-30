@@ -1,0 +1,42 @@
+-- Sample DBT models created for portfolio purposes. No client or confidential business information is included.
+
+version: 2
+
+models:
+
+  - name: stg_customer
+    description: Customer staging model
+
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+          - unique
+
+      - name: EMAIL
+        tests:
+          - not_null
+
+  - name: dim_customer
+    description: Customer dimension table
+
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: Order fact table
+
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+
+      - name: CUSTOMER_ID
+        tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: CUSTOMER_ID
