@@ -1,4 +1,5 @@
 -- Create Stream on Raw Customer Table
+-- Sample DBT models created for portfolio purposes. No client or confidential business information is included.
 
 CREATE OR REPLACE STREAM STR_CUSTOMER
 ON TABLE RAW.CUSTOMER
