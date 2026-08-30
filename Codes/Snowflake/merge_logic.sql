@@ -1,4 +1,5 @@
 -- Customer CDC Merge
+-- Sample DBT models created for portfolio purposes. No client or confidential business information is included.
 
 MERGE INTO CURATED.DIM_CUSTOMER T
 USING (
