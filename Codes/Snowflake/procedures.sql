@@ -1,3 +1,5 @@
+-- Sample DBT models created for portfolio purposes. No client or confidential business information is included.
+
 CREATE OR REPLACE PROCEDURE SP_LOAD_CUSTOMER()
 RETURNS STRING
 LANGUAGE SQL
