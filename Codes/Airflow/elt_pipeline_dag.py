@@ -1,6 +1,5 @@
 # Production-style Airflow DAG created for portfolio purposes.
-# All client-specific logic, source systems, credentials, and business rules
-# have been removed or anonymized.
+# All client-specific logic, source systems, credentials, and business rules have been removed or anonymized.
 
 from datetime import datetime, timedelta
 
